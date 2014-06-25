@@ -1,0 +1,92 @@
+\documentclass{beamer}
+
+\usepackage{graphicx}
+
+\usetheme{Pittsburgh}
+\usecolortheme{dolphin}
+
+\title[\#belrus]{Visualizing World Cup tweets}
+\subtitle{Belgium versus Russia}
+\author[Sirris]{Nick Boucart and Tom Ruette}
+\institute[Sirris]{Sirris, Collective Centre for the Belgian Technological Industry}
+\date{\today}
+
+\begin{document}
+
+% slide 1: title
+  \frame{\titlepage}
+
+% slide 2: what did we do
+  \begin{frame}
+    \frametitle{What we did}
+      We monitored relevant Twitter activity during the Belgium versus Russia game
+  \end{frame}
+
+% slide 3: how many tweets
+  \begin{frame}
+    \frametitle{Twitter messages}
+   \input{../wk2014-twitter/totaltweets}
+  \end{frame}
+
+% slide 4: how many people
+  \begin{frame}
+    \frametitle{Twitter users}
+   \input{../wk2014-twitter/totaltweeters}
+  \end{frame}
+
+% slide 4bis: languages 
+  \begin{frame}
+    \frametitle{Languages}
+   \input{../wk2014-twitter/top10langs}
+  \end{frame}
+
+% slide 5: location
+  \begin{frame}
+    \frametitle{Locations in Belgium}
+    \begin{figure}
+      \centering
+      \includegraphics[width=0.8\textwidth]{../wk2014-twitter/tweet-in-belgium}
+    \end{figure}
+  \end{frame}
+
+% slide 6 fieberkurve
+  \begin{frame}
+    \frametitle{Minute by minute}
+    \begin{figure}
+      \centering
+      \includegraphics[width=1.1\textwidth]{../wk2014-twitter/tweets-minute}
+    \end{figure}
+  \end{frame}
+
+% slide 6: Man of Twitter
+  \begin{frame}
+    \frametitle{Red Devils in Twitter}
+    \begin{figure}
+      \centering
+      \includegraphics[width=1.1\textwidth]{../wk2014-twitter/freq-players}
+    \end{figure}
+  \end{frame}
+
+% slide 8: media 
+  \begin{frame}
+    \frametitle{Pictures}
+    \input{../wk2014-twitter/totalmedia}
+  \end{frame}
+
+% slide 9: media
+  \begin{frame}
+    \frametitle{Pictures}
+    \input{../wk2014-twitter/media}
+  \end{frame}
+
+% slide 10:
+  \begin{frame}
+    \frametitle{Who we are}
+    \begin{itemize}
+       \item DIY: get the Python and R scripts to do this from Github: https://github.com/sirris/wk2014-twitter
+       \item We work at Sirris (sirris.be)
+       \item Follow us on twitter (@nickboucart and @ruettet) or mail us (nick.boucart@sirris.be and tom.ruette@sirris.be)
+    \end{itemize}
+  \end{frame}
+ 
+\end{document}
